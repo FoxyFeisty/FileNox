@@ -1,0 +1,149 @@
+/* CSS INDEX */
+
+/*	01	general
+	02	classes
+	03	IDs
+	04	Media Queries
+*/
+
+
+/***********************************/
+/*	01 general	*/
+body {
+	background-color: lightgrey;
+	color: black;
+	font-family: Helvetica;
+	/*text-align: center;*/
+	/*margin: auto;*/
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+h1 {
+	margin-bottom: 0;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+textarea {
+	height: 212px;
+	/*width: 212px;*/
+}
+a {
+	text-decoration: none;
+}
+ol {
+	text-align: left;
+	font-size: 0.9em;
+}
+ol >* {
+	margin: 0.5em;
+}
+/***********************************/
+/*	02 classes	*/
+.hidden {
+	display: none
+}
+.shown {
+	display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+
+/***********************************/
+/*	03 IDs	*/
+#logo > img {
+	max-width: 212px;
+}
+#wrapper {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	background-color: #fffefed1;
+	padding: 1em;
+	width: 219px;
+	border-radius: 5px;
+}
+#chooseBtn {
+	display: flex;
+	/*position: center;*/
+	flex-direction: column;
+	margin: auto;
+	/*margin-top: 1em;*/
+}
+#divInput > label {
+	padding-bottom: 0.5em;
+}
+#divUpload {
+	/*background-color: #7169694f;*/
+	border: 1px solid #4642425e;
+	border-radius: 5px;
+    padding: 1em;
+    max-width: 200px;
+}
+#chooseUpload, #chooseInput, #btnEncrypt, #btnSend, #btnStop {
+	padding: 0.5em;
+	margin: 0.2em;
+    font-size: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.19);
+}
+#btnEncrypt, #btnSend {
+	width: fit-content;
+	margin: auto;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    /*color: #d23232;*/
+	/*background-color: white; */
+}
+#btnSend:hover, #btnEncrypt:hover {
+	transform: scale(1.1);
+}
+#btnSend > a {
+	color: white;
+}
+#chooseUpload:hover, #chooseInput:hover {
+	background-color: black;
+	color: white;
+}
+#btnStop:hover {
+	background-color: black;
+	color: white;
+}
+#chooseUpload:focus, #chooseInput:focus {
+	outline: none;
+	background-color: black;
+	color: white;
+}
+#btnEncrypt:focus, #btnSend:focus {
+	outline: none;
+}
+#btnEncrypt, #btnSend {
+	background-color: #d23232;
+    color: white;
+}
+#messageErr {
+	/*color: #d23232;*/
+	font-style: italic;
+}
+#messageSend {
+	 /*position: fixed;*//*
+  	top: 30%;
+  	left: 50%;*/
+  	/*transform: translate(-50%, -50%);*/
+	height: 180px;
+	background-color: #908a8a;
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px 1px #6d6d6d;
+}
+#messageSend > p {
+	color: white;
+	margin-bottom: 0em;
+    margin-top: 2em;
+}
+
+/***********************************/
+/*	03 Media Queries	*/
