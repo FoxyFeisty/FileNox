@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<meta name="viewpoint" content="width=device-width, initial-scale=1">
+		<title>Safe message transfer</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/openpgp/4.0.0/openpgp.min.js"></script>
+
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="logo">
+				<!-- <img src="kreuzwerker-logo.svg" alt="logo"> -->
+			</div>
+			<h1>FileNox</h1>
+			<p>Safe file transfer using OpenPGB standard</p>
+			<div id="fileDiv">
+				<div id="chooseBtn">
+					<button id="chooseUpload">Upload file</button>
+					<button id="chooseInput">Input text</button>
+				</div>
+					<div id="divUpload" class="hidden">
+						<input type="file" id="textUpload">
+					</div>
+					<div id="divInput" class="hidden">
+					<label>Your message:</label>
+					<textarea id="textInput" name="textInput"></textarea>
+					</div>
+					<button type="button" id="btnEncrypt" class="hidden">Encrypt</button>
+				<div id="messageErr"></div>
+			</div>
+			<div id="messageSend" class="hidden">
+				<p>Your message has been encrypted and saved to your clipboard.</p>
+				<button id="btnSend">Send</button>
+				<button id="btnStop">Cancel</button>
+			</div>
+				<ol>
+				<li>Choose a file for upload or input text.</li>
+				<li>Your message will be encrypted and saved to your clipboard.</li>
+				<li>Simply paste it with right mouse-click to your mail program.</li>
+			</ol>
+		</div>
+		<script src="pubkey.js" type="text/javascript"></script>
+		<script src="filenox.js" type="text/javascript"></script>
+	</body>
+</html>
