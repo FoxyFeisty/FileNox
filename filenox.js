@@ -46,7 +46,11 @@
 		document.body.appendChild(dummy);
   		dummy.value = text;
   		dummy.select();
+<<<<<<< HEAD
   		document.execCommand("cut");
+=======
+  		document.execCommand("copy");
+>>>>>>> 9d9237edd819d3391064684d6992feb1f7a1908e
   		document.body.removeChild(dummy);
     }
     // load external script with pubkey 
