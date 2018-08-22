@@ -29,7 +29,7 @@ form {
 }
 textarea {
 	height: 212px;
-	/*width: 212px;*/
+	padding: 0.5em;
 }
 a {
 	text-decoration: none;
@@ -52,7 +52,6 @@ ol >* {
     margin: 1em;
 }
 
-
 /***********************************/
 /*	03 IDs	*/
 #logo > img {
@@ -64,25 +63,21 @@ ol >* {
 	margin: auto;
 	background-color: #fffefed1;
 	padding: 1em;
-	width: 219px;
 	border-radius: 5px;
 }
 #chooseBtn {
 	display: flex;
-	/*position: center;*/
 	flex-direction: column;
 	margin: auto;
-	/*margin-top: 1em;*/
+	max-width: 200px;
 }
 #divInput > label {
 	padding-bottom: 0.5em;
 }
 #divUpload {
-	/*background-color: #7169694f;*/
 	border: 1px solid #4642425e;
 	border-radius: 5px;
     padding: 1em;
-    max-width: 200px;
 }
 #chooseUpload, #chooseInput, #btnEncrypt, #btnSend, #btnStop {
 	padding: 0.5em;
@@ -91,13 +86,14 @@ ol >* {
     border-radius: 5px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.19);
 }
+#chooseUpload, #chooseInput {
+	background-color: #aeaaaa;
+}
 #btnEncrypt, #btnSend {
 	width: fit-content;
 	margin: auto;
     margin-top: 2em;
     margin-bottom: 1em;
-    /*color: #d23232;*/
-	/*background-color: white; */
 }
 #btnSend:hover, #btnEncrypt:hover {
 	transform: scale(1.1);
@@ -130,10 +126,6 @@ ol >* {
 	font-style: italic;
 }
 #messageSend {
-	 /*position: fixed;*//*
-  	top: 30%;
-  	left: 50%;*/
-  	/*transform: translate(-50%, -50%);*/
 	height: 180px;
 	background-color: #908a8a;
 	border-radius: 5px;
