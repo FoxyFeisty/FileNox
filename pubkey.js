@@ -1,4 +1,4 @@
-(function pubKeyObject() { 
+function pubKeyObject() { 
 
 	this.pubkey = `-----BEGIN PGP PUBLIC KEY BLOCK-----
 
@@ -33,5 +33,7 @@
 
 	return this.pubkey;
 
-})();
+}
+
+localStorage.setItem('pubkey', pubKeyObject());
 
